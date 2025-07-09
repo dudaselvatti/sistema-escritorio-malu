@@ -1,0 +1,119 @@
+/* Reset e estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    padding-top: 60px;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 960px;
+    margin: 2rem auto;
+}
+
+/* Título */
+h3 {
+    color: #1A3B5D;
+    font-weight: bold;
+}
+
+/* Botão de novo agendamento */
+.btn-success {
+    background-color: #1A3B5D;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #4A90E2;
+    transform: scale(1.02);
+}
+
+/* Tabela estilizada */
+.table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table thead.table-dark th {
+    background-color: #1A3B5D;
+    color: #fff;
+    border: none;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Células de ação */
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+/* Botões de ação */
+.btn-sm {
+    border-radius: 20px;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+}
+
+.btn-primary {
+    background-color: #4A90E2;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Botão voltar */
+.btn-outline-secondary {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    max-width: 300px;
+    display: inline-block;
+    color: #1A3B5D;
+    border-color: #1A3B5D;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #4A90E2;
+    color: #fff;
+    border-color: #4A90E2;
+}
+
+td[colspan="5"] {
+    color: #666;
+    font-style: italic;
+}

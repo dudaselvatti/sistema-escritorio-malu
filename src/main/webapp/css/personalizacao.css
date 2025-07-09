@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte elegante */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar personalizada */
+.navbar {
+    background-color: #1A3B5D !important;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #4A90E2 !important;
+    transition: color 0.3s ease;
+}
+
+/* Container principal centralizado horizontalmente */
+.container.text-center {
+    max-width: 960px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 3rem auto 0 auto; /* Centraliza horizontalmente */
+}
+
+h2 {
+    color: #1A3B5D;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Card de acesso ao painel */
+.card-painel {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border-left: 6px solid #4A90E2;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-painel:hover {
+    transform: translateY(-5px);
+}
+
+/* Botão de acesso ao painel */
+.btn-acesso-painel {
+    background-color: #1A3B5D;
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-acesso-painel:hover {
+    background-color: #4A90E2;
+    transform: scale(1.02);
+}
+
+/* Botão secundário */
+.btn-outline-primary {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    max-width: 300px;
+    margin: 1rem auto 0;
+    display: block;
+}
+
+/* Footer opcional */
+.footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+a{
+	text-decoration: none;
+}

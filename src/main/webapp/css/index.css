@@ -1,0 +1,253 @@
+/* ================================== */
+/* 1. ESTILOS GERAIS E RESET          */
+/* ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f8f9fa; /* Fundo cinza claro para as páginas internas */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; 
+}
+
+/* ================================== */
+/* 2. BARRA DE NAVEGAÇÃO (NAVBAR)     */
+/* ================================== */
+.navbar {
+    background-color: #1A3B5D !important;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .navbar-nav .nav-link.active {
+    color: #4A90E2 !important;
+}
+
+/* ================================== */
+/* 3. SEÇÃO HERO (PÁGINA INICIAL)     */
+/* ================================== */
+.hero {
+    background: linear-gradient(135deg, #0f3e6d, #1a5b9c);
+    color: white;
+    text-align: center;
+    padding: 10rem 2rem 7rem;
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.95;
+}
+
+/* ================================== */
+/* 4. CARDS E COMPONENTES             */
+/* ================================== */
+
+/* Cards de funcionalidades na página inicial */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Cards de opção nos painéis (Cliente, Adv, Admin) */
+.card-opcao {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card-opcao:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 3rem; 
+    color: #1A3B5D; 
+}
+
+/* ================================== */
+/* 5. FORMULÁRIOS E PAINÉIS           */
+/* ================================== */
+
+/* Container principal para formulários e listagens */
+.form-container-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    color: #1A3B5D;
+}
+
+/* Cabeçalho dos painéis internos */
+.panel-header {
+    background-color: #e9ecef;
+    border-radius: 0.75rem;
+}
+
+fieldset {
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+fieldset:focus-within {
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+legend {
+    font-weight: 600;
+    color: #1A3B5D;
+}
+
+/* --- CÓDIGO ADICIONADO PARA A GRADE DE HORÁRIOS --- */
+#horarios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    gap: 0.5rem;
+}
+
+.time-slot {
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.time-slot.btn-primary {
+    color: white !important;
+    background-color: #1A3B5D;
+    border-color: #1A3B5D;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(26, 59, 93, 0.25);
+}
+/* --- FIM DO CÓDIGO ADICIONADO --- */
+
+
+/* ================================== */
+/* 6. RODAPÉ (FOOTER)                 */
+/* ================================== */
+.footer {
+    background-color: #212529; /* Cor de bg-dark do Bootstrap */
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+/* ================================== */
+/* 7. RESPONSIVIDADE (MEDIA QUERIES)  */
+/* ================================== */
+
+/* Para tablets e telas menores (menor que 992px) */
+@media (max-width: 991.98px) {
+    /* Em páginas como "Pré-Cadastro", adiciona um espaço quando as colunas empilham */
+    .form-column {
+        margin-bottom: 2rem !important;
+    }
+}
+
+/* Para celulares (menor que 768px) */
+@media (max-width: 767.98px) {
+    /* --- GERAL --- */
+    body {
+        font-size: 0.95rem; /* Leve redução na fonte base para caber mais texto */
+    }
+
+    .container.my-4.my-md-5 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    /* --- HERO (PÁGINA INICIAL) --- */
+    .hero {
+        padding: 5rem 1rem 4rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+
+    /* --- FORMULÁRIOS E PAINÉIS --- */
+    .form-container-card {
+        padding: 1.5rem !important;
+    }
+    
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .panel-header {
+        padding: 2.5rem 1.5rem !important;
+    }
+
+    .panel-header h1.display-5 {
+        font-size: 2.2rem;
+    }
+    
+    .card-footer.text-end {
+        text-align: center !important; 
+    }
+    .card-footer .btn {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    .card-footer .btn:last-child {
+        margin-bottom: 0;
+    }
+    .card-footer a.me-2 {
+        margin-right: 0 !important;
+    }
+    
+    .form-container-card .row > [class*="col-"] {
+        margin-bottom: 1rem !important;
+    }
+    .form-container-card .row > [class*="col-"]:last-child {
+        margin-bottom: 0 !important;
+    }
+}

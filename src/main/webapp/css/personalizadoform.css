@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cor de fundo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    padding-top: 80px; /* Espaço para navbar fixa */
+}
+
+/* Navbar personalizada */
+.navbar {
+    background-color: #1A3B5D !important;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff !important;
+}
+
+/* Container de formulários */
+.container {
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 3rem;
+    max-width: 700px;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #1A3B5D;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Parágrafo explicativo */
+.container p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Labels dos campos */
+.form-label {
+    font-weight: 600;
+    color: #1A3B5D;
+}
+
+/* Campos de entrada */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 0.15rem rgba(74, 144, 226, 0.25);
+}
+
+/* Botão principal (Salvar / Cadastrar) */
+.btn-success {
+    background-color: #1A3B5D;
+    border: none;
+    border-radius: 30px;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #4A90E2;
+    transform: scale(1.02);
+}
+
+/* Botão secundário (Cancelar / Voltar) */
+.btn-outline-secondary {
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    max-width: 300px;
+    margin-top: 1.5rem;
+    display: block;
+    color: #1A3B5D;
+    border-color: #1A3B5D;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #4A90E2;
+    color: #fff;
+    border-color: #4A90E2;
+}
+
+/* Mensagem do CPF */
+#msgCpf {
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Estilo das mensagens de alerta */
+.alert {
+    border-radius: 0.5rem;
+}
+
+/* Campo de descrição opcional */
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Estilização opcional de links */
+a {
+    text-decoration: none;
+}
