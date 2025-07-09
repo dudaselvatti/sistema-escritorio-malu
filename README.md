@@ -39,7 +39,7 @@ COMO EXECUTAR O PROJETO
 - Execute o script `escritorio.sql`, localizado na pasta `/sql`, para criação das tabelas e do  banco
 
 **3. Configuração de código:**
-- Altere em /util e em /database as especificações da sua conexão de banco de dados, password e usuario
+- Altere em /util as especificações da sua conexão de banco de dados, password e usuario
 
 **4. Tomcat:**
 - Rode usando Tomcat 9.0 
